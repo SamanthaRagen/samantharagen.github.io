@@ -1,0 +1,731 @@
+/* Custom CSS for Bootstrap 5.3 template designed for Web and Time-based Unit DESN1021  - WSU 2023 */
+/* Author: Web and Time-based Design unit */
+/* Date: 6 October 2023 */
+
+/* sets the default rem size for an entire page (for all sizing to be relative to) */
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+
+
+}
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #EFDBC5;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* fonts */
+
+.goudy-bookletter-1911-regular {
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* NAVBAR - Start - CSS generator source: https://work.smarchal.com/twbscolor/ */
+.navbar {
+  background: #331E07;
+}
+
+.nav-link, .navbar-brand {
+  color: #EFDBC5;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1rem !important;
+}
+
+.nav-link:hover{
+  background: #C5B3A0;
+  color: #EFDBC5;
+}
+
+.navbar-brand:hover {
+  background: #331E07;
+  color: #331E07;
+  padding: 5px;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-toggler{
+  background: #C5B3A0 !important;
+  color:#EFDBC5;
+}
+
+a.active {
+	background: #EFDBC5;
+}
+
+/* NAV - End */
+
+/* ROW, COLUMN AND HR - Start */
+.row {
+  margin-bottom: 0;
+  background-color: #C5B3A0;
+}
+
+[class*="col-"] {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #C5B3A0;
+  }
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 10px solid #331E07;
+  width: 100%;
+}
+
+/* ROW, COLUMN AND HR - End */
+
+/* ELEMENT STYLES - Start  */
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Goudy Bookletter 1911', sans-serif;
+  cursor: url(../img/cherryblossom.png), auto;
+}
+
+h1 {
+	     color: #331E07;
+	     padding-top: 4rem;
+           padding-bottom: 1rem;
+           font-size: 3rem;
+                      }
+
+/* HEAD ANIMATION - Start: https://www.cssportal.com/css-animated-text-generator/ */
+    
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+
+svg {
+	font-family: "Send Flowers", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 9s infinite alternate;
+	stroke-width: 2;
+	stroke: #331E07;
+	font-size: 134px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(197,179,160,0); stroke: rgba(51,30,7,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(197,179,160,0); stroke: rgba(51,30,7,1); }
+	80%  {fill: rgba(197,179,160,0); stroke: rgba(51,30,7,1); stroke-width: 3; }
+	100% {
+		fill: rgba(197,179,160,1); stroke: rgba(51,30,7,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #EFDBC5};
+
+
+/* HEAD ANIMATION - End */
+
+h2 {
+  color: #EFDBC5;
+  padding-top: .5rem;
+  font-size: 2.5rem;
+  animation: effect 2s linear infinite;
+}
+
+@keyframes effect {
+  0% {
+      background: linear-gradient(#C5B3A0, #331E07);
+      -webkit-background-clip: text;
+      }
+
+  100% {
+          background: linear-gradient(#331E07, #C5B3A0);
+      -webkit-background-clip: text;
+   }
+  }
+
+  .card-title {
+    color: transparent;
+    padding-top: .5rem;
+    font-size: 2.5rem;
+    animation: effect 2s linear infinite;
+  }
+  @keyframes effect {
+    0% {
+        background: linear-gradient(#C5B3A0, #331E07);
+        -webkit-background-clip: text;
+        }
+  
+    100% {
+            background: linear-gradient(#331E07, #C5B3A0);
+        -webkit-background-clip: text;
+     }
+    }
+
+h3 {
+  padding-bottom: 0.3rem;
+  padding-top: 1rem;
+	color: #C5B3A0;
+}
+
+h4 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  color: #C5B3A0;
+}
+
+p, ul, ol, li, a {
+  font-family: 'Outfit', sans-serif;
+  color: #C5B3A0;
+}
+
+p.intro {
+  color: #EFDBC5;
+  font-size: 1.1em;
+  padding-top: 1em;
+  text-align: left;
+}
+/* ELEMENT STYLES - End */
+
+/* HEROES IMAGE - Start Animation */
+
+.heroimg {
+  border: 10px solid #331E07;
+  animation: myAnim 10s ease 0s infinite normal forwards;
+  border-radius: 180px;
+}
+
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+
+/* HEROES IMAGE - End Animation */
+
+/* HERO SOCIAL MEDIA - Start */
+
+a.social {
+  color: white;
+  text-decoration: none;
+}
+
+a.social:hover {
+  color: #331E07;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* HERO SOCIAL MEDIA - End */
+
+/* FLOATING STICKY SOCIAL MEDIA - Start - source: https://www.w3schools.com/howto/howto_css_sticky_social_bar.asp */
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #331E07;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+/* FLOATING STICKY SOCIAL MEDIA - End */
+
+/* STANDOUT TEXT - Start */
+
+.standout {
+	    color: #331E07;
+	    font-weight: 700;
+	    font-size: 1.2em;
+          }
+
+
+
+/* STANDOUT TEXT - End */
+
+/* ACCORDION - Start */
+
+.accordion {
+  background-color: #C5B3A0;
+  color: #331E07;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 1em;
+}
+
+.accordion-item {
+  background-color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: solid 1px #331E07;
+  transition: 0.4s;
+  margin-bottom: 1em;
+}
+
+h3 button.uniquebutton {
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  font-weight: bold;
+  background: #331E07;
+}
+
+
+/* ACCORDION - End */
+
+/* FOOTER SOCIAL MEDIA - Start */
+a.footsocial {
+  color: #331E07;
+  text-decoration: none;
+}
+
+a.footsocial:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* FOOTER SOCIAL MEDIA - End */
+
+
+/* PORTFOLIO FILTER - Start */
+
+.gallery-wrap,
+#gallery {
+  overflow: hidden;
+}
+
+#filters {
+  margin: 1%;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+#filters li {
+  float: left;
+}
+
+#filters li span {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #C5B3A0;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.25s;
+}
+
+#filters li:hover span {
+  color: #000;
+}
+
+#filters li span.active {
+  background: #331E07;
+  color: #fff;
+}
+
+.gallery-item {
+  float: left;
+  width: 33.333%;
+  padding: 10px;
+  position: relative;
+  z-index: 10;
+  display: none;
+}
+
+.inside {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.details,
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+.details h2 {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0;
+}
+.details p {
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.inside img {
+  float: left;
+  width: 100%;
+}
+
+.overlay {
+  background:#331E07;
+  z-index: 1;
+  transition: all 0.7s ease-in-out;
+}
+
+.gallery-item:hover .details,
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+@media (max-width: 30em) {
+  .wrap {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .gallery-item {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* PORTFOLIO FILTER - End */
+
+
+/* CARD HOVER - Start */
+
+.card {
+  outline: 1px solid #9B8064;
+  transition: outline 1s ease 0s;
+}
+
+.card:hover {
+  outline: 10px solid #705436;
+}
+
+.bright {
+  filter: brightness(198%);
+}
+
+.bright:hover {
+  transform: scaleX(-1);
+}
+
+/* CARD HOVER - End */
+
+.flip-box {
+  background-color: #331E07;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #9B8064;
+  color: #C5B3A0;
+  padding: 12px;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #EFDBC5;
+  color: #331E07;
+  transform: rotateY(180deg);
+  text-align: center;
+  padding: 10px;
+}
+/* FLIPBOX - End */
+
+
+/* CONTACT FORM - Start - sourced from: https://www.bootdey.com/snippets/view/contact-page-section */
+
+.contact-name {
+  margin-bottom: 30px;
+}
+.contact-name h5 {
+  font-size: 22px;
+  color: #331E07;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.contact-name p {
+  font-size: 18px;
+  margin: 0;
+	color: white;
+}
+
+.social-share a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 10px;
+}
+.social-share .instagram {
+  box-shadow: 0 8px 30px -4px rgba(234, 76, 137, 0.5);
+  background-color: #331E07;
+}
+.social-share .linkedin {
+  box-shadow: 0 8px 30px -4px rgba(1, 119, 172, 0.5);
+  background-color: #331E07;
+}
+
+.contact-form .form-control {
+  border-bottom: 1px solid black;
+  background: white;
+  border-radius: 0;
+  padding-left: 0;
+  box-shadow: none !important;
+}
+
+.formcol {
+	background: #C5B3A0;
+}
+
+.contact-form .form-control:focus {
+  border-bottom: 1px solid #C5B3A0;
+}
+.contact-form .form-control.invalid {
+  border-bottom: 1px solid #C5B3A0;
+}
+.contact-form .send {
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .contact-form .send {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-form .send {
+    margin-top: 20px;
+}
+.px-btn {
+    padding: 0 50px 0 20px;
+    line-height: 60px;
+    position: relative;
+    display: inline-block;
+    color: white;
+    background: none;
+    }
+.px-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #C5B3A0;
+    border-right: 1px solid transparent;
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+    width: 60px;
+    height: 60px;
+}
+.px-btn .arrow {
+    width: 13px;
+    height: 2px;
+    background: currentColor;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 25px;
+}
+.px-btn .arrow:after {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid currentColor;
+    border-top: 2px solid currentColor;
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    display: inline-block;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.formanchor {
+	color: white;
+}
+
+.formanchor:hover {
+	color: #331E07;
+}
+/* CONTACT FORM - End */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  p {
+    color: #C5B3A0;
+  }
+
+/* HEAD ANIMATION - Start - Adjusting size for XS screens */
+    
+
+svg text {
+	font-size: 4em;
+}
+
+/* HEAD ANIMATION - End */
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  p {
+    color: #C5B3A0;
+  }
+
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  p {
+    color: #C5B3A0;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  p {
+    color: #C5B3A0;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  p {
+    color: #C5B3A0;
+  }
+}
+
+/* // Extra Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+  p {
+    color: #C5B3A0;
+  }
+}
+
+/* MEDIA QUERIES - End */
+
+
+/* Custom CSS for Bootstrap 5.3 template designed for Web and Time-based Unit DESN1021  - WSU 2023 */
+
